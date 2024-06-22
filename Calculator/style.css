@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+}
+
+.calculator{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: 1px 5px 18px rgba(115, 115, 120, 0.5);
+}
+
+input{
+    width: 335px;
+    border: none;
+    padding: 20px;
+    margin:10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84,84,0.1);
+    font-size: 40px;
+    text-align: right;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+input::placeholder{
+    color:#ffffff;
+}
+
+button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: -8px -8px 15px black;
+    cursor: pointer;
+    transition:1s ease-out;
+    outline: 0.1px solid #313131;
+    outline-offset:3px ;
+    
+}
+.special{
+    /* color: green; */
+    background-color: green;
+}
+
+.operators{
+    color: yellow;
+    /* background-color: yellow; */
+}
+
+.equalbtn{
+    /* color: red; */
+    background-color:red ;
+    font-weight:900px;
+}
+
+button:active{
+    transform: translate(2px,2px);
+    background: #000;
+    box-shadow: -5px -5px 15px rgba(255,255, 255, 0.5);
+}
+/* button:hover{
+    box-shadow: -5px -5px 15px rgba(255,255, 255, 0.5);
+} */
+.equalbtn:hover{
+    box-shadow: -5px -5px 15px rgba(224, 167, 10, 0.845);
+}
+.operators:hover{
+    box-shadow: -5px -5px 15px rgba(255, 255,0,0.5);
+}
+.special:hover{
+    box-shadow: -5px -5px 15px rgba(50,220,180, 0.5);
+}
+@media(max-width:406px){
+    .calculator{
+        padding: 10px;
+
+    }
+    input{
+        width :270px;
+        padding: 9px;
+        margin:7px;
+    }
+    button{
+        height:48px;
+        width: 48px;
+    }
+
+}

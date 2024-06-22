@@ -1,0 +1,12 @@
+@media(max-width:768px){
+    .navbar > .menu > ul{
+        display:grid;
+        /* flex-direction: column; */
+    }
+    .hemburger{
+        display: block;
+        margin-right: 32px;
+    }
+
+    
+}
